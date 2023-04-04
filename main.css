@@ -35,17 +35,10 @@ header {
   padding: 0px;
   gap: 0px;
   list-style-type: none;
-  justify-content: center;
   color: rgb(128,0,128);
 	border: 3px solid rgb(128, 0, 128); 
 	border-radius:5px;
 	background-image: linear-gradient(to bottom right, rgb(255, 230, 255), rgb(255, 204, 255));
-}
-
-#navbar li {
-  width: 20%; 
-  text-align: center;
-  padding: 5px;
 }
 
 #navbar a {
@@ -53,7 +46,7 @@ header {
   display: block;
 }
 
-ul#navbar li a:hover {
+#navbar a:hover {
     background-color: rgb(128, 0, 128);
     color: white;
 }
