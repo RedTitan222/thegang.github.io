@@ -1,0 +1,119 @@
+a { text-decoration: none; }
+a:link { color:rgb(128, 0, 128); }
+a:visited { text-decoration: none; decoration: none; }
+
+#pageTitle {
+	animation: float 3s ease-in-out infinite;
+	color:rgb(102, 153, 255);
+	text-shadow: 1px 1px 2px white;
+  text-align: center;
+  padding: 10px;
+}
+
+@keyframes float {
+  0%   { transform: translateY(0px); }
+  50%  { transform: translateY(25px); }
+  100% { transform: translateY(0px); }
+}
+
+body {
+	background-color:white;
+  display: flexbox; 
+  font-family: Verdana, sans-serif; 
+  padding: 0px;
+}
+
+body>div{ background-color:rgb(230, 230, 255); }
+
+header {
+	background-image: linear-gradient(to bottom right, rgb(204, 204, 255), rgb(255, 255, 204));
+}
+
+#navbar {
+	display: flex;
+  margin: 0px;
+  padding: 0px;
+  gap: 0px;
+  list-style-type: none;
+  justify-content: center;
+  color: rgb(128,0,128);
+	border: 3px solid rgb(128, 0, 128); 
+	border-radius:5px;
+	background-image: linear-gradient(to bottom right, rgb(255, 230, 255), rgb(255, 204, 255));
+}
+
+#navbar li {
+  width: 20%; 
+  text-align: center;
+  padding: 5px;
+}
+
+#navbar a {
+  text-decoration: none; 
+  display: block;
+}
+
+ul#navbar li a:hover {
+    background-color: rgb(128, 0, 128);
+    color: white;
+}
+
+main { 
+  display: flexbox; 
+  padding: 2%; 
+  margin: 2% 5%; 
+  border: 3px solid rgb(128, 0, 128); 
+  background-color:rgb(255, 230, 255);
+}
+
+main h2 {
+  text-align: center; 
+  margin: 2% auto;
+}
+
+main ul li {
+  padding: 0.5%;
+}
+
+#poem {
+  text-align: center; 
+  font-style: italic;
+}
+
+#starLineup {
+  margin: 1%; 
+  text-align: center;
+}
+
+#starLineup tr td {
+  width: 10%; 
+  text-align: center;
+}
+
+#starLineup tr td img {
+  width: 90%; 
+  border: solid black 3px;
+}
+
+footer {
+  background-color: lightgrey;
+}
+
+#copyright {
+  text-align: right;
+}
+
+#theSquad {
+  margin: 1%; 
+  text-align: center;
+}
+
+#theSquad tr td {
+  width: 10%; 
+  text-align: center;
+}
+
+#theSquad tr td img {
+  width: 90%; 
+  border: solid black 3px;
+}

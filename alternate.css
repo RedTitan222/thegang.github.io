@@ -1,0 +1,115 @@
+a { text-decoration: none; }
+a:link { color:red; }
+a:visited { text-decoration: none; decoration: none; }
+
+#pageTitle {
+  animation: float 3s ease-in-out infinite;
+  color:black;
+  text-shadow: 1px 1px 2px red;
+  text-align: center;
+  padding: 10px;
+}
+
+@keyframes float {
+  0%   { 
+	transform: translateX(0px);
+  }
+  50%  { 
+	transform: translateX(25px); 
+	}
+  100% { 
+	transform: translateX(0px); 
+  }
+}
+
+body {
+  background-color: #757575;
+  display: flexbox; 
+  font-family: Georgia, sans-serif; 
+  padding: 0px;
+}
+
+body>div { background-color:linear-gradient(to bottom right, orange, red); }
+
+div{ background-color: lightgrey; }
+
+header {
+	background-image: linear-gradient(to bottom right, orange, red);
+}
+
+img {
+  width: 400px;
+}
+
+
+#navbar {
+	color: #FF2200;
+	border: 3px solid black; 
+	background-image: linear-gradient(to bottom right, lightgray, gray);
+  display: flex;
+  margin: 0px;
+  padding: 0px;
+  gap: 0px;
+  list-style-type: none;
+  justify-content: center;
+	border-radius:5px;
+}
+
+#navbar li {
+  width: 20%;
+  color: #FF2200; 
+  text-align: center;
+  padding: 5px;
+}
+
+#navbar a {
+  color: #FF2200;
+  text-decoration: none; 
+  display: block;
+}
+
+ul#navbar li a:hover {
+  background-color: black;
+  color: white;
+}
+
+main{
+  display: flexbox; 
+  padding: 2%; 
+  margin: 2% 5%;
+	border: 3px solid #FF2200; 
+  background-color: lightgrey;
+}
+
+#starLineup {
+  margin: 2%; 
+  text-align: left;
+}
+
+#starLineup tr td {
+  width: 15%; 
+  text-align: left;
+}
+
+#starLineup tr td img {
+  width: 85%; 
+  border: double grey 2px;
+}
+
+footer{ background-color: lightgrey;
+}
+
+#theSquad {
+  margin: 1%; 
+  text-align: center;
+}
+
+#theSquad tr td {
+  width: 10%; 
+  text-align: center;
+}
+
+#theSquad tr td img {
+  width: 90%; 
+  border: solid black 3px;
+}

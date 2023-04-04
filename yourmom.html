@@ -1,0 +1,80 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>The Cat Repo</title>
+    <link title="default" id="theme1" rel="stylesheet" type="text/css" href="./main.css">
+    <link title="alternate" "id="theme2" rel="alternate stylesheet" type="text/css" href="./alternate.css">
+    <script>
+      function toggleCSS() {
+        var currentCSS = document.getElementById('theme1');
+          if (currentCSS.getAttribute('href') == 'main.css') {
+            currentCSS.setAttribute('href', 'alternate.css');
+          } 
+          else {
+          currentCSS.setAttribute('href', 'main.css');
+          }
+      }
+      </script>
+  </head>
+  <body>
+  <div>
+    <header>
+      <h1 id="pageTitle">Catching Cats</h1>
+      <nav>
+        <ul id="navbar">
+          <li><a href="./index.html" target="_self">Home</a></li>
+          <li><a href="./yourmom.html" target="_self">The Cat Repo</a></li>
+          <li><a href="https://en.wikipedia.org/wiki/Cat" target="_blank">Cats Wiki</a></li>
+          <li><a href="https://www.britannica.com/animal/cat" target="_blank">Cats Britannica</a></li>
+          <li><button onclick="toggleCSS()">Alternate CSS</button></li>
+        </ul>
+      </nav>
+    </header>
+    <br/>
+    <main>
+      <h2>The Squad</h2>
+      <table id="theSquad">
+        <tr>
+          <td><img src="Images/ASleepin.jpg" alt="A Sleeping"></td>
+          <td><img src="Images/BlindSylvie.jpg" alt="Blind Sylvie"></td>
+			    <td><img src="Images/Sylvie.jpg" alt="Sylvie"></td>
+			    <td><img src="Images/SylvieFromAbove.jpg" alt="Sylvie From Above"></td>
+		    </tr>
+			  <tr>
+		      <td><img src="Images/HadesHigh.jpg" alt="Hades High"></td>
+			    <td><img src="Images/HadesHunting.jpg" alt="Hades Hunting"></td>
+			    <td><img src="Images/HadesTouchesTheStars.jpg" alt="Hades Touches The Stars"></td>
+			    <td><img src="Images/High.jpg" alt="High"></td>
+			  </tr>
+			  <tr>
+		      <td><img src="Images/KingHades.jpg" alt="King Hades"></td>
+			    <td><img src="Images/Queen.jpg" alt="Queen"></td>
+			    <td><img src="Images/SylvieWithToy.jpg" alt="Sylvie With Toy"></td>
+			    <td><img src="Images/Rivers_Pets-GangGang.jpg" alt="Ringo and Small Jak"></td>
+			  </tr>
+			  <tr>
+		      <td><img src="Images/Rivers_Pets-LosAmigos.jpg" alt="Milo and Jak Tired"></td>
+			    <td><img src="Images/Rivers_Pets-scrrd.jpg" alt="Daidy Traumatized"></td>
+			    <td><img src="Images/SylvieWithToy.jpg" alt="Sylvie With Toy"></td>
+			    <td><img src="Images/RiversPets_Friends.jpg" alt="Ringo and Jak Waiting"></td>
+			  </tr>
+			  <tr>
+			    <td><img src="Images/SylvieFromAbovePt2.jpg" alt="Sylvie From Above Again"></td>
+			    <td><img src="Images/SheOut.jpg" alt="She Out"></td>
+			    <td><img src="Images/HadesCaughtPt2.jpg" alt="Hades Caught Again"></td>
+  		    <td><img src="Images/HadesCaught2.jpg" alt="Hades Caught"></td>
+			  </tr>
+			  <tr>
+          <td><img src="Images/Rivers_Pets-ASleeper.jpg" alt="Daisy Sleeping"></td>
+          <td><img src="Images/Rivers_Pets-Smiles.jpg" alt="Rimgo and Jak after a Walk"></td>
+	      </tr>
+      </table>
+      </main>
+      <br/>
+      <footer>
+        <p id="copyright">Copywright &copy AIR Co. 2023</p>
+      </footer>
+    </div>
+  </body>
+</html>

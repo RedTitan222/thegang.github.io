@@ -1,0 +1,99 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Catching Cats - Home</title>
+    <link title="default" id="theme1" rel="stylesheet" type="text/css" href="./main.css">
+    <link title="alternate" rel="alternate stylesheet" type="text/css" href="./alternate.css">
+    <script>
+      function toggleCSS() {
+        var currentCSS = document.getElementById('theme1');
+          if (currentCSS.getAttribute('href') == 'main.css') {
+            currentCSS.setAttribute('href', 'alternate.css');
+          } 
+          else {
+            currentCSS.setAttribute('href', 'main.css');
+          }
+      }
+      </script>
+   </head>
+   <body>
+     <div>
+       <header>
+         <h1 id="pageTitle">Catching Cats</h1>
+           <nav>
+             <ul id="navbar">
+               <li><a href="./index.html" target="_self">Home</a></li>
+               <li><a href="./yourmom.html" target="_self">The Cat Repo</a></li>
+               <li><a href="https://en.wikipedia.org/wiki/Cat" target="_blank">Cats Wiki</a></li>
+               <li><a href="https://www.britannica.com/animal/cat" target="_blank">Cats Britannica</a></li>
+               <li><button id="themeSwitch" onclick="toggleCSS()">Alternate CSS</button></li>
+             </ul>
+           </nav>
+       </header>
+	     <br/>
+      <main>
+        <div>
+          <h2 style="margin-top: auto;">10 Cat Facts</h2>
+            <ul>
+              <li>A female cat can be referred to as a molly or a queen, males are toms</li>
+      		    <li>Cats have a primordial pouch that aids in protecting their organs if attacked</li>
+      		    <li>Cats can rotate their ears 180 degrees!</li>
+      		    <li>They have three eyelids</li>
+              <li>Meows are for talking to humans, not each other</li>
+              <li>A group of cats is called a clowder</li>
+              <li>They are lactose intolerant</li>
+              <li>A cat's cerebral cortex contains about twice as many nuerons as that of dogs</li>
+              <li>In Ancient Egypt, when a person's house cat passed away, the owner would shave their eyebrows to show their grief</li>
+              <li>To get down from something like a tree, a cat must back down because their claws all face and retract the same way</li>
+		        </ul>
+          </div>
+          <div>
+            <h2>A Poem</h2>
+              <div style="width: 30%; margin: auto;">
+                <p id="poem">
+          	      She sights a Bird-she chuckles- <br>
+           	      She flattens-then she crawls- <br>
+             	    She runs without the look of feet- <br>
+             	    Her eyes increase to Balls- <br>
+             	    <br/>
+             	    Her Jaws stir-twitching-hungry-<br>
+             	    Her Teeth can hardly stand-<br>
+             	    She leaps, but Robin leaped the first-<br>
+             	    Ah, Pussy, of the Sand, <br>
+             	    <br/>
+             	    The Hopes so juicy ripening-<br>
+             	    You almost bathed your Tongue-<br>
+             	    When Bliss disclosed a hundred Toes-<br>
+             	    And fled with every one-
+                </p> 
+			          <br/>
+                <p style="text-align: right; font-style: italic;"><a href="https://allpoetry.com/She-sights-a-Birdshe-chuckles" target="_blank">- Emily Dickinson</a></p>
+             </div>
+          </div>
+          <div>
+            <h2>Our Feline Stars</h2>
+            <table id="starLineup"> 
+              <tr>
+                <td><img src="./Images/HadesCaught2.jpg" alt="Hades Profile Picture"></td>
+                <td><img src="./Images/Rivers_Pets-scrrd2.jpg" alt="River's First Cat Profile Picture"></td>
+                <td><img src="./Images/SheOut2.jpg" alt="Sylvie's Profile Picture"></td>
+                <td><img src="./Images/Rivers_Pets-Smiles3.jpg" alt="River's Second Cat Profile Picture"></td>
+                <td><img src="./Images/RiversPets_LosAmigosPt2v2.jpg" alt="River's Gang of Pets"></td>
+              </tr>
+              <tr>
+                <td>Hades</td>
+                <td>Daisy</td>
+                <td>Sylvie</td>
+                <td>Jak</td>
+                <td>Jak and Milo</td>
+              </tr>
+            </table>
+          </div>
+        </main>
+        <footer>
+          <p id="copyright">Copyright &copy AIR Co. 2023</p>
+        </footer>
+      </div>
+    </body>
+</html>
