@@ -4,7 +4,11 @@
     <meta charset="UTF-8">
     <title>The Cat Repo</title>
     <link title="default" id="theme1" rel="stylesheet" type="text/css" href="./main.css">
-    <link title="alternate" "id="theme2" rel="alternate stylesheet" type="text/css" href="./alternate.css">
+    <link title="alternate" id="theme2" rel="alternate stylesheet" type="text/css" href="./alternate.css">
+    <!-- Latest compiled and minified CSS -->
+    <link href="	https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Latest compiled JavaScript -->
+    <script src="	https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
     <script>
       function toggleCSS() {
         var currentCSS = document.getElementById('theme1');
@@ -21,15 +25,36 @@
   <div>
     <header>
       <h1 id="pageTitle">Catching Cats</h1>
-      <nav>
-        <ul id="navbar">
-          <li><a href="./index.html" target="_self">Home</a></li>
-          <li><a href="./yourmom.html" target="_self">The Cat Repo</a></li>
-          <li><a href="https://en.wikipedia.org/wiki/Cat" target="_blank">Cats Wiki</a></li>
-          <li><a href="https://www.britannica.com/animal/cat" target="_blank">Cats Britannica</a></li>
-          <li><button onclick="toggleCSS()">Alternate CSS</button></li>
-        </ul>
-      </nav>
+      <div id="navbar" class="row" style="justify-content: center;">
+        <div class="navbar row navbar-expand-sm">
+          <button id="hammy" class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        </div>
+        <nav class="navbar row" style="justify-content: center">
+          <div class="" id="navbarToggleExternalContent">
+            <li>
+              <a class="navbar-brand col" style="text-align: center" href="./index.html" target="_self">Home</a>
+            </li>
+            <li>	
+              <a class="navbar-brand col" style="text-align: center" href="./yourmom.html" target="_self">The Cat Repo</a>
+            </li>	
+            <li class="navbar-brand col dropdown">
+              <a class="nav-link dropdown-toggle" style="text-align: center;" href="index.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">Cats Wiki</a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" style="text-align: center" href="https://en.wikipedia.org/wiki/Cat" target="_blank">Main Page</a></li>
+                <li><a class="dropdown-item" style="text-align: center" href="https://en.wikipedia.org/wiki/Cat#Etymology_and_naming" target="_blank">Etymology and Naming</a></li>
+              </ul>
+            </li>
+            <li>
+              <a class="navbar-brand" style="text-align: center" href="https://www.britannica.com/animal/cat" target="_blank">Cats Britannica</a>
+            </li>
+            <li class="navbar-brand col" style="text-align: center;">
+              <button class="navbar-toggler" style="text-align: center" id="themeSwitch" onclick="toggleCSS()">Alternate CSS</button>
+            </li>
+          </div>
+        </nav>
+      </div>
     </header>
     <br/>
     <main>

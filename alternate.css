@@ -11,15 +11,9 @@ a:visited { text-decoration: none; text-decoration: none; }
 }
 
 @keyframes float {
-  0%   { 
-	transform: translateX(0px);
-  }
-  50%  { 
-	transform: translateX(25px); 
-	}
-  100% { 
-	transform: translateX(0px); 
-  }
+  0%   { transform: translateX(0px); }
+  50%  { transform: translateX(25px); }
+  100% { transform: translateX(0px); }
 }
 
 body {
@@ -30,8 +24,6 @@ body {
 }
 
 body>div { background-color:linear-gradient(to bottom right, orange, red); }
-
-div{ background-color: lightgrey; }
 
 header {
 	background-image: linear-gradient(to bottom right, orange, red);
@@ -65,13 +57,13 @@ img {
   padding: 5px;
 }
 
-#navbar a {
+#navbar li a {
   color: #FF2200;
   text-decoration: none; 
   display: block;
 }
 
-ul#navbar li a:hover {
+#navbar li a:hover {
   background-color: black;
   color: white;
 }
@@ -82,21 +74,6 @@ main{
   margin: 2% 5%;
 	border: 3px solid #FF2200; 
   background-color: lightgrey;
-}
-
-#starLineup {
-  margin: 2%; 
-  text-align: left;
-}
-
-#starLineup tr td {
-  width: 15%; 
-  text-align: left;
-}
-
-#starLineup tr td img {
-  width: 85%; 
-  border: double grey 2px;
 }
 
 footer{ background-color: lightgrey;

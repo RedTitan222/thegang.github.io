@@ -19,29 +19,42 @@
     </script>
    </head>
    <body class="conatiner">
-     <div class="row">
-       <header class="row">
+     <div>
+       <header>
          <h1 id="pageTitle">Catching Cats</h1>
-         <div id="navbar" class="row" style="justify-content: center">
-		<div class="navbar row">
-			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
-				<span class="navbar-toggler-icon"></span>
-			</button>
-		 </div>
-		<nav class="navbar" style="justify-content: center">
-			<div class="collapse" id="navbarToggleExternalContent">
-					<a class="navbar-brand col-md" style="text-align: center" href="./index.html" target="_self">Home</a>
-					<a class="navbar-brand col-md" style="text-align: center" href="./yourmom.html" target="_self">The Cat Repo</a>
-					<a class="navbar-brand col-md" style="text-align: center" href="https://en.wikipedia.org/wiki/Cat" target="_blank">Cats Wiki</a>
-						<!-- Add a section for specific sections of this wiki-->
-					<a class="navbar-brand" style="text-align: center" href="https://www.britannica.com/animal/cat" target="_blank">Cats Britannica</a>
-					<button class="navbar-toggler" style="text-align: center" id="themeSwitch" onclick="toggleCSS()">Alternate CSS</button>
+         <div id="navbar" class="row" style="justify-content: center;">
+			<div class="navbar row navbar-expand-sm">
+				<button id="hammy" class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+			</div>
+			<nav class="navbar row" style="justify-content: center">
+				<div class="" id="navbarToggleExternalContent">
+					<li>
+						<a class="navbar-brand col" style="text-align: center" href="./index.html" target="_self">Home</a>
+					</li>
+					<li>	
+						<a class="navbar-brand col" style="text-align: center" href="./yourmom.html" target="_self">The Cat Repo</a>
+					</li>	
+					<li class="navbar-brand col dropdown">
+						<a class="nav-link dropdown-toggle" style="text-align: center;" href="index.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">Cats Wiki</a>
+						<ul class="dropdown-menu">
+							<li><a class="dropdown-item" style="text-align: center" href="https://en.wikipedia.org/wiki/Cat" target="_blank">Main Page</a></li>
+							<li><a class="dropdown-item" style="text-align: center" href="https://en.wikipedia.org/wiki/Cat#Etymology_and_naming" target="_blank">Etymology and Naming</a></li>
+						</ul>
+					</li>
+					<li>
+						<a class="navbar-brand" style="text-align: center" href="https://www.britannica.com/animal/cat" target="_blank">Cats Britannica</a>
+					</li>
+					<li class="navbar-brand col" style="text-align: center;">
+						<button class="navbar-toggler" style="text-align: center" id="themeSwitch" onclick="toggleCSS()">Alternate CSS</button>
+					</li>
 				</div>
 			</nav>
 		</div>
        </header>
 	     <br/>
-      <main class="row">
+      <main>
         <div>
           <h2 style="margin-top: auto;">10 Cat Facts</h2>
             <ul>
